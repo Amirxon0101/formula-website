@@ -1,0 +1,18 @@
+<svg width="23.000000" height="26.000000" viewBox="0 0 23 26" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<linearGradient x1="9.660000" y1="0.000000" x2="9.660000" y2="23.111111" id="paint_linear_2591_839_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#000000"/>
+			<stop offset="1.000000" stop-color="#666666"/>
+		</linearGradient>
+		<linearGradient x1="12.877812" y1="2.890625" x2="12.877812" y2="26.001736" id="paint_linear_2591_840_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#000000"/>
+			<stop offset="1.000000" stop-color="#666666"/>
+		</linearGradient>
+	</defs>
+	<rect id="Frame 2591" rx="4.500000" width="18.320000" height="22.111111" transform="translate(0.500000 0.500000)" stroke="url(#paint_linear_2591_839_0)" stroke-opacity="0.500000" stroke-width="1.000000"/>
+	<rect id="Frame 2590" rx="4.500000" width="19.240000" height="22.111111" transform="translate(3.257812 3.390625)" fill="#FFFFFF" fill-opacity="1.000000"/>
+	<rect id="Frame 2590" rx="4.500000" width="19.240000" height="22.111111" transform="translate(3.257812 3.390625)" stroke="url(#paint_linear_2591_840_0)" stroke-opacity="0.500000" stroke-width="1.000000"/>
+</svg>
