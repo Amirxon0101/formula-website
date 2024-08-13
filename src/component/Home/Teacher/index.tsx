@@ -34,7 +34,7 @@ const Teachers: React.FC = () => {
   return(
     <div className='relative flex pt-[80px] pl-[176px] mr-[120px] pb-[84px]' style={{borderRight: '1px solid rgba(30, 30, 30, 0.3)',borderBottom: '1px solid rgba(30, 30, 30, 0.3)'}}>
         <div>
-        <h4 className="w-[324px] text-[40px] mb-[28px] "style={{fontWeight:'500',fontFamily: 'Helvetica', background: 'linear-gradient(178.65deg, rgb(35, 45, 79), rgb(80, 103, 181))',WebkitBackgroundClip: 'text',WebkitTextFillColor: 'transparent',backgroundClip: 'text',textFillColor: 'transparent',}}>
+        <h4 className="w-[324px] text-[40px] mb-[28px] "style={{fontWeight:'500',fontFamily: 'Helvetica', background: 'linear-gradient(178.65deg, rgb(35, 45, 79), rgb(80, 103, 181))',WebkitBackgroundClip: 'text',WebkitTextFillColor: 'transparent',backgroundClip: 'text'}}>
           Meet the teacher who teaches you online
         </h4>
         <p className='text-[16px] w-[420px] mb-[48px] mr-[80px]' style={{color: 'rgba(30, 30, 30, 0.7)',fontFamily:'Helvetica-normal'}}>online platforms often offer mico-courses or modules,allowing learners tofocus on specific topics of interest and acquire targeted skills.</p>

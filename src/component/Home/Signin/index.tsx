@@ -27,7 +27,7 @@ const Signin: React.FC = () => {
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
             backgroundClip: 'text',
-            textFillColor: 'transparent',
+          
           }}
         >
           Sign up for a free trail lesson

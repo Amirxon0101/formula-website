@@ -9,6 +9,7 @@ import Category from "./Category";
 import Signin from "./Signin";
 import Teachers from "./Teacher";
 import Comment from "./Comment";
+import News from "./News";
 const Home: React.FC = () => {
   return (
     <div className="w-full flex flex-col ">
@@ -21,6 +22,7 @@ const Home: React.FC = () => {
        <Signin/>
        <Teachers/>
        <Comment/>
+       <News/>
       <Footer />
     </div>
   );

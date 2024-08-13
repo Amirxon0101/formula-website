@@ -14,7 +14,7 @@ const Learning: React.FC = () => {
       <div className="relative mr-[47px] mb-[80px]">
         <div className="ml-[174px] mt-[88px]"> 
           <img className=" w-[200px] absolute  left-[10px] top-[120px]" src={Rocket}/>
-          <h4  className=" text-[40px] font-[500] leading-[40px] tracking-wide text-left " style={{ fontFamily: 'Helvetica', background: 'linear-gradient(178.65deg, rgb(35, 45, 79), rgb(80, 103, 181))',WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',backgroundClip: 'text', textFillColor: 'transparent',}}>
+          <h4  className=" text-[40px] font-[500] leading-[40px] tracking-wide text-left " style={{ fontFamily: 'Helvetica', background: 'linear-gradient(178.65deg, rgb(35, 45, 79), rgb(80, 103, 181))',WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',backgroundClip: 'text'}}>
           Access to learning<br /> anytime any were  </h4>
           <p className="mb-[102px] text-[16px] mt-[12px]" style={{fontWeight:'500', fontFamily:'Helvetica-normal',color: 'rgba(30, 30, 30, 0.7)'}}>Expand Your Horizons with Online Education</p>
         </div>

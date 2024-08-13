@@ -20,7 +20,7 @@ const Course: React.FC = () => {
     return (
         <div className='relative h-[1155px] ml-[120px]'style={{ borderLeft: '1px solid rgba(30, 30, 30, 0.3)' }}>
             <div className="flex">
-                <h4 className="mt-[80px] ml-[54px] mb-[100px] text-[40px] font-[500] leading-[40px] tracking-wide text-left" style={{ fontFamily: 'Helvetica', background: 'linear-gradient(178.65deg, rgb(35, 45, 79), rgb(80, 103, 181))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', textFillColor: 'transparent', }}>
+                <h4 className="mt-[80px] ml-[54px] mb-[100px] text-[40px] font-[500] leading-[40px] tracking-wide text-left" style={{ fontFamily: 'Helvetica', background: 'linear-gradient(178.65deg, rgb(35, 45, 79), rgb(80, 103, 181))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                     Pick a course to<br />get started your<br />study
                 </h4>
                 <div className='mt-[100px] ml-[273px]'>

@@ -44,7 +44,7 @@ const Category: React.FC = () => {
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
             backgroundClip: 'text',
-            textFillColor: 'transparent',
+            
           }}
         >
           Pick a course by our popular category
