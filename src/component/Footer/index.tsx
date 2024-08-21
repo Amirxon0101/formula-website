@@ -13,8 +13,8 @@ import FooterImg from '../../assets/icons/footer.svg'
 const Footer: React.FC = () => {
   return (
     <div  >
-      <div className="flex pl-[174px]">
-        <div className="flex flex-col mr-[10px] ">
+<div className="flex  xl:flex-row 2xl:flex-row pl-[174px] sm:pl-0 md:pl-0 lg:pl-0 xl:pl-[174px]">       
+   <div className="flex flex-col mr-[10px] ">
           <img className="w-[200px] mt-[27px]" src={Edumate}/>
           <span className="text-[16px] w-[150px] mt-[10px] mb-[16px]" style={{color: 'rgba(0, 0, 0, 0.6)',fontFamily:'Helvetica'}}>Get 25M best online
           course</span>
@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div>
-          <div className=" w-[1070px] flex items-center pt-[50px] pl-[55px] pb-[42px]" style={{borderLeft: '1px solid rgba(30, 30, 30, 0.3)'}}>
+          <div className=" w-[1070px] flex items-center pt-[50px] pl-[55px] pb-[42px] " style={{borderLeft: '1px solid rgba(30, 30, 30, 0.3)'}}>
             <span className="mr-[5px] text-[32px]" style={{  fontFamily:'Helvetica',fontWeight:400,background: 'linear-gradient(178.65deg, rgb(35, 45, 79), rgb(80, 103, 181))',WebkitBackgroundClip: 'text',WebkitTextFillColor: 'transparent',backgroundClip: 'text',textFillColor: 'transparent',}}>Main links</span>
             <img src={But}/>
             <div>

@@ -32,7 +32,7 @@ const Comment: React.FC = () => {
 
     return (
         <div
-            className="flex flex-col items-center  w-[1440px] relative ml-[100px]"
+            className="flex flex-col items-center  w-[1440px] relative ml-[100px] "
             style={{
                 backgroundImage: `url(${Commentbg})`,
                 backgroundSize: 'cover',

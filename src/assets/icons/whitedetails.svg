@@ -1,0 +1,18 @@
+<svg width="24.128906" height="24.000000" viewBox="0 0 24.1289 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip2642_848">
+			<rect id="north_24dp_5F6368_FILL0_wght400_GRAD0_opsz24 1" rx="-0.500000" width="23.000000" height="23.130308" transform="translate(24.628906 0.500000) rotate(90.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<linearGradient x1="22.117188" y1="11.999998" x2="-0.710632" y2="11.999998" id="paint_linear_2642_849_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#FFFFFF"/>
+			<stop offset="1.000000" stop-color="#FFFFFF" stop-opacity="0.000000"/>
+		</linearGradient>
+	</defs>
+	<rect id="north_24dp_5F6368_FILL0_wght400_GRAD0_opsz24 1" rx="-0.500000" width="23.000000" height="23.130308" transform="translate(24.628906 0.500000) rotate(90.000000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip2642_848)">
+		<path id="Vector" d="M-5.04 12L16.92 11L10.71 6.39L12.61 5L22.11 12L12.61 19L10.68 17.6L16.92 13L-5.04 12Z" fill="url(#paint_linear_2642_849_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>

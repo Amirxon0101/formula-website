@@ -10,16 +10,14 @@ import Purplearrow from '../../assets/imgs/purplearrow.jpg'
 
 const Opportunities: React.FC = () => {
   return (
-    <div className="w-full flex h-[57.5vh]" >
-      <div className="relative pt-[200px]">
-        <div className="ml-[-20px] absolute items-center justify-center flex" style={{ transform: 'rotate(-90.00deg)' }}>
-          <img className="mr-[10px]" style={{ transform: 'rotate(90.00deg)' }} src={Scrollimg} alt="Scroll" /> SCROLL DOWN
-        </div>
-        <p className="w-[404px] ml-[-80px]" style={{ border: '1px solid rgba(30, 30, 30, 0.2)', transform: 'rotate(-90.00deg)' }}></p>
+<div className="w-full flex pr-[212px] flex-row justify-between items-center pl-[0px] sm: pl-[160px] pr-[10px] lg:pl-[130px] xl:pl-[100px]  flex-col lg:flex-col xl:flex-row pr-[233px] pb-[81px]">
+<div className="relative pt-[200px] sm: pt-[0px]">
+        
+        <p className="w-[404px] ml-[-80px] sm: hidden" style={{ border: '1px solid rgba(30, 30, 30, 0.2)', transform: 'rotate(-90.00deg)' }}></p>
       </div>
       <div 
-        className="relative w-[277px] h-[238px] mt-[85px] rounded-[20px] ml-[-100px]"
-        style={{
+className="relative w-[277px] h-[238px] mt-[85px] rounded-[20px] sm: ml-[00px]     "        
+    style={{
           backgroundImage: `url(${Yellowback})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center'
@@ -52,7 +50,7 @@ const Opportunities: React.FC = () => {
         </p>
       </div>
       <div 
-        className="relative w-[277px] h-[238px] mt-[85px] rounded-[20px] ml-[91px]"
+        className="relative w-[277px] h-[238px] mt-[85px] rounded-[20px] ml-[-100px] sm: ml-[10px] "
         style={{
           backgroundImage: `url(${Greenback})`,
           backgroundSize: 'cover',
@@ -79,7 +77,7 @@ physical locations.
        
       </div>
       <div 
-        className="relative w-[277px] h-[238px] mt-[85px] rounded-[20px] ml-[83px]"
+        className="relative w-[277px] h-[238px] mt-[85px] rounded-[20px]  sm: ml-[00px]"
         style={{
           backgroundImage: `url(${Purpleback})`,
           backgroundSize: 'cover',

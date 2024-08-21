@@ -92,9 +92,8 @@ color: rgb(16, 24, 40);
   background: #f9f9f9;
   margin-right: 10px;
 }
-body{
+html, body {
   overflow-x: hidden;
-background-color:'white';
 }
 
 
