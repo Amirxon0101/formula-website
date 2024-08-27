@@ -33,8 +33,8 @@ const GotoAbout=()=>{
           <li><a href="#" className='pb-2 sm:pb-0 sm:pr-[53px]' style={{ textDecoration: 'none', fontFamily: 'SF Pro Display', color: 'rgb(35, 45, 80)' }} onClick={GotoAbout}>About</a></li>
           <li><a href="#" className='pb-2 sm:pb-0 sm:pr-[53px]' style={{ textDecoration: 'none', fontFamily: 'SF Pro Display', color: 'rgb(35, 45, 80)' }}>Courses</a></li>
           <li><a href="#" className='pb-2 sm:pb-0 sm:pr-[53px]' style={{ textDecoration: 'none', fontFamily: 'SF Pro Display', color: 'rgb(35, 45, 80)' }}  onClick={()=>navigate('/Teachers')}>Teachers</a></li>
-          <li><a href="#" className='pb-2 sm:pb-0 sm:pr-[53px]' style={{ textDecoration: 'none', fontFamily: 'SF Pro Display', color: 'rgb(35, 45, 80)' }}>Blogs</a></li>
-          <li><a href="#" className='' style={{ textDecoration: 'none', fontFamily: 'SF Pro Display', color: 'rgb(35, 45, 80)' }}>Contact</a></li>
+          <li><a href="#" className='pb-2 sm:pb-0 sm:pr-[53px]' style={{ textDecoration: 'none', fontFamily: 'SF Pro Display', color: 'rgb(35, 45, 80)' }} >Blogs</a></li>
+          <li><a href="#" className='' style={{ textDecoration: 'none', fontFamily: 'SF Pro Display', color: 'rgb(35, 45, 80)' }}  onClick={()=>navigate('/Contact')}>Contact</a></li>
         </ul>
         <div className="flex items-center   lg: mb-[16px] mt-[9px]">
       <img className=" mr-[15px] cursor-pointer sm:mr-[25px] sm:   " src={Loop} alt="Search" />

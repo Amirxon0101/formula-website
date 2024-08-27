@@ -1,4 +1,5 @@
 import { lazy, LazyExoticComponent } from "react";
+import SingIn from "../component/SignIn";
 
 const Home = lazy(() => import("../component/Home/index"));
 
@@ -7,11 +8,13 @@ const Home = lazy(() => import("../component/Home/index"));
 
 const About = lazy(() => import("../component/About"));
 
-const Register = lazy(() => import("../component/Register"));
+const Register = lazy(() => import("../component/Contact"));
 const Login = lazy(() => import("../component/Login"));
 const Profil = lazy(() => import("../component/Profil"));
 const Teachers  = lazy(()=>import("../component/Teachers"))
+const Contact  = lazy(()=>import("../component/Contact"))
 const TeachersDetails = lazy(()=>import('../component/Teachers/Teacherdetails'))
+const SingIn = lazy(()=>import('../component/SignIn'))
 
 interface RouteData {
   id: number;
@@ -80,6 +83,16 @@ export const Data: RouteData[] = [
     id:22,
     path:"/Teachers/details",
     component:TeachersDetails
+  },
+  {
+    id:23,
+    path:"/Contact",
+    component:Contact
+  },
+  {
+    id:24,
+    path:"/SingIn",
+    component: SingIn
   },
 
 ];

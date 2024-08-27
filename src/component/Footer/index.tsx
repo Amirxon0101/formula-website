@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
             <div className=" flex items-center w-[463px] pb-[7px]" style={{borderBottom: '1px solid rgba(0, 0, 0, 0.5)'}}>
                     <img src={Email} className="mr-[12px]"/>
                     <input placeholder="Email address" className="w-[300px] border-none outline-none"/>
-                    <img className="ml-[200px]" src={But}/>
+                    <img className="ml-[200px]" src={But}/> 
                 </div>
     
           </div>
