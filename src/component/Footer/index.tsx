@@ -9,8 +9,10 @@ import Edumate from '../../assets/imgs/edumate.jpg'
 import But from '../../assets/icons/explore.svg'
 import Email from '../../assets/icons/email.svg'
 import FooterImg from '../../assets/icons/footer.svg'
+import { useNavigate } from "react-router-dom";
 
 const Footer: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <div  >
 <div className="flex  xl:flex-row 2xl:flex-row pl-[174px] sm:pl-0 md:pl-0 lg:pl-0 xl:pl-[174px]">       
@@ -48,7 +50,7 @@ const Footer: React.FC = () => {
             <img src={But}/>
             <div>
         <ul className="flex items-center list-none">
-          <li><a href="#" className='pr-[53px]' style={{textDecoration:'none', fontFamily:'SF Pro Display',color: 'rgb(35, 45, 80)'}}>Sign In/Registration</a></li>
+          <li><a href="#" className='pr-[53px]' style={{textDecoration:'none', fontFamily:'SF Pro Display',color: 'rgb(35, 45, 80)'}} onClick={()=>navigate('/SignIn')}>Sign In/Registration</a></li>
           <li><a href="#" className='pr-[53px]' style={{textDecoration:'none', fontFamily:'SF Pro Display',color: 'rgb(35, 45, 80)'}}>Investor</a></li>
           <li><a href="#" className='pr-[53px]' style={{textDecoration:'none', fontFamily:'SF Pro Display',color: 'rgb(35, 45, 80)'}}>Careers</a></li>
           <li><a href="#" className='pr-[53px]' style={{textDecoration:'none', fontFamily:'SF Pro Display',color: 'rgb(35, 45, 80)'}}>Help and support</a></li>

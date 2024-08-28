@@ -127,7 +127,7 @@ const Contact: React.FC = () => {
 
     <div style={{ borderTop: '0.5px solid rgba(30, 30, 30, 0.2)', borderBottom:'0.5px solid rgba(30, 30, 30, 0.2)'}} className="flex pb-[80px] max-sm:pb-0 sm:pb-0 md:pb-[60px]">
       <div style={{borderRight: '0.5px solid rgba(30, 30, 30, 0.2)'}} className="flex mr-[159px] pt-[50px] items-center max-sm:mr-[32px] sm:mr-[32px] md:mr-[12px]
-      lg:mr-[159px] lg:pt-[50px]">
+      lg:mr-[159px] lg:pt-[50px] max-sm:mr-[10px]">
         <h3 className=" flex rotate-90 text-[16px] gap-[8px] max-sm:text-[12px] max-sm:w-[92px] max-sm:h-[12px]" style={{fontFamily:'Helvetica' ,fontWeight:'400', color:'rgba(30, 30, 30, 0.7)' ,}}>SCROLL DOWN <img style={{rotate:'270deg'}} src={ScrollDown} className="max-sm:w-[17px] max-sm:h-[17px]"/> </h3>
       </div>
       <div className="flex justify-center pt-[80px] max-sm:flex-col sm:flex-col md:flex-row md:flex-wrap md:pt-[50px] lg:flex-row lg:flex lg:justify-center" >
@@ -140,7 +140,7 @@ const Contact: React.FC = () => {
           <input type="email" placeholder="eg.setup@gmail.com" className="pb-[8px] pt-[36px] text-[24px] max-sm:text-[16px] max-sm:pt-[16px] sm:text-[16px] lg:pb-[8px] lg:pt-[36px] lg:text-[24px]" style={{border:'none', borderBottom: '1px solid rgba(0, 0, 0, 0.8)', color:'rgba(0, 0, 0, 0.3)'}}/>
         </div>
 
-        <div className="pl-[73px] mt-[20px] max-sm:pl-0 sm:pl-0 md:pl-[20px] lg:pl-[73px] lg:mt-[20px]">
+        <div className="pl-[73px] mt-[20px] max-sm:pl-0 sm:pl-0 md:pl-[20px] lg:pl-[73px] lg:mt-[20px] xl:mt-[60px]">
         <button className="py-[16px] px-[40px] max-sm:py-[5px] max-sm:px-[12px] max-sm:rounded-[5px] max-sm:gap-[8px] rounded-[15px] gap-[16px] flex items-center my-[16px]" style={{background:'rgb(36, 85, 214)' , color:'rgb(255, 255, 255)', fontFamily:'Helvetica' ,fontWeight:'400' ,border:'none'}}>
           <img src={ArrowButton} alt="" />
           Sent now
@@ -150,7 +150,7 @@ const Contact: React.FC = () => {
     </div>
 
     <div className="flex justify-center pt-[80px] pb-[100px] gap-[163px] max-sm:flex-col max-sm:pt-[55px] max-sm:gap-[32px] max-sm:pb-[74px] sm:flex-col
-    sm:pt-[55px] sm:gap-[32px] sm:pb-[74px] md:gap-[50px] md:flex-row"> 
+    sm:pt-[55px] sm:gap-[32px] sm:pb-[74px] md:gap-[50px] md:flex-row xl:gap-[280px]"> 
       <div className="pt-[80px] max-sm:pl-[16px] max-sm:pt-0 sm:pl-[50px] md:pl-[50px] md:pt-[40px]">
         <div className="w-[174px] md:ml-[30px]">
           <h3 className="text-[26px] max-sm:text-[16px] sm:text-[16px] md:text-[20px]" style={{color:'rgba(0, 0, 0, 0.5)' , fontFamily:'Helvetica', fontWeight:'400'}}>Call us</h3>
@@ -173,7 +173,7 @@ const Contact: React.FC = () => {
           <a href="#" className="text-[26px] max-sm:text-[16px] sm:text-[16px] md:text-[20px]" style={{color:'rgba(0, 0, 0, 0.8)' ,fontFamily:'Helvetica', fontWeight:'400', textDecoration:'none'}}>www.edumate.com</a>
         </div>
       </div>
-      <div className="md:mr-[30px]">
+      <div className="md:mr-[30px] ">
       <YMaps>
       <Map
         defaultState={{

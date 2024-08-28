@@ -7,9 +7,11 @@ import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
 import Singin from '../../assets/imgs/SingIn.jpg';
 import SingInBtn from '../../assets/icons/signInBtn.svg'
 import SingInArrow from '../../assets/icons/signInArrow.svg'
+import { useNavigate } from "react-router-dom";
 
 
 const SingIn: React.FC = () => {
+  const navigate = useNavigate();
     const settings = {
       
       infinite: true,
@@ -94,7 +96,7 @@ const SingIn: React.FC = () => {
 
                 <div className="flex items-center gap-[5px] max-sm:justify-center">
                     <p className="text-[16px]" style={{fontFamily:'Helvetica', fontWeight:'400', color:'rgb(30, 30, 30)'}}>Don’t have an account?</p>
-                    <a href="#" className="text-[16px]" style={{fontFamily:'Helvetica', fontWeight:'400', color:'rgb(38, 113, 254)', textDecoration:'none'}}>Sing up</a>
+                    <a href="#" className="text-[16px]" style={{fontFamily:'Helvetica', fontWeight:'400', color:'rgb(38, 113, 254)', textDecoration:'none'}} onClick={()=>navigate('/SignUp')}>Sing up</a>
                 </div>
             </div>
             </div>
