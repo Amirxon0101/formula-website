@@ -10,23 +10,62 @@ import Twitter from '../../assets/icons/twitter.svg';
 import Linkedin from '../../assets/icons/linkedin.svg';
 import Teacher5 from '../../assets/imgs/teacher5.png';
 import Teacher6 from '../../assets/imgs/teacher6.png';
-import Explore from '../../assets/icons/explore.svg';
 import Whitedetails from '../../assets/icons/whitedetails.svg';
 import { useNavigate } from "react-router-dom";
+import Footer from "../Footer";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Slider from 'react-slick';
+
 
 const Teachers: React.FC = () => {
+  const settings = {
+    
+    infinite: true,
+    speed: 2000, // Speed of the swipe
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1600, // Set to 0 for continuous swiping
+    cssEase: 'ease', // Smooth transition
+    pauseOnHover: false, // Prevent autoplay from stopping on hover
+    pauseOnFocus: false, // Prevent autoplay from stopping on focus
+    responsive: [
+      {
+        breakpoint: 1200, // Extra large screens (lg, xl)
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768, // Medium screens (md)
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480, // Small screens (sm)
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
   const navigate = useNavigate();
   const teachers = [
-    { image: Teacher1, name: 'Anjelina Joe', position: 'Desinger' },
-    { image: Teacher2, name: 'Sizan porte', position: 'Developer' },
-    { image: Teacher3, name: 'Megan Forst', position: 'Developer' },
-    { image: Teacher4, name: 'Rosy D Suza', position: 'Developer' },
-    { image: Teacher5, name: 'Rodger Saint', position: 'Developer' },
-    { image: Teacher6, name: 'Rodger Saint', position: 'Developer' },
+    {id:1, image: Teacher1, name: 'Anjelina Joe', position: 'Desinger' },
+    {id:2, image: Teacher2, name: 'Sizan porte', position: 'Developer' },
+    {id:3, image: Teacher3, name: 'Megan Forst', position: 'Developer' },
+    {id:4, image: Teacher4, name: 'Rosy D Suza', position: 'Developer' },
+    {id:5, image: Teacher5, name: 'Rodger Saint', position: 'Developer' },
+    {id:6, image: Teacher6, name: 'Rodger Saint', position: 'Developer' },
   ];
 
-  const handleNavigate = () => {
-    navigate('/Teachers/details');
+  const handleNavigate = (teacher: { image: string; name: string; position: string }) => {
+    navigate('/Teachers/details', { state: { teacher } });
   };
 
   return (
@@ -56,10 +95,13 @@ const Teachers: React.FC = () => {
     <div
       className="relative mr-[20px] sm:mr-[30px] md:mr-[50px] lg:mr-[91px] mt-[20px] sm:mt-[40px] md:mt-[60px] lg:mt-[100px] xl:mt-[120px] 2xl:mt-[140px]"
       key={index}
+
     >
+      
       <img
-        className="w-full lg:w-[277px] xl:w-[300px] 2xl:w-[350px] hover:opacity-30"
-        style={{ transition: 'opacity 0.3s ease' }}
+
+        className= " relative w-full lg:w-[277px] xl:w-[300px] 2xl:w-[350px] "
+        style={{ transition: 'opacity 0.3s ease',       }}
         src={teacher.image}
         alt={teacher.name}
       />
@@ -80,8 +122,9 @@ const Teachers: React.FC = () => {
 
       {/* Social Media Icons with higher z-index */}
       <div
-        className="absolute bottom-[5px] left-[5px] rounded-[10px] sm:rounded-[12px] md:rounded-[15px] lg:rounded-[15px] w-[40px] sm:w-[45px] md:w-[50px] lg:w-[55px] h-[80px] sm:h-[90px] md:h-[100px] lg:h-[120px] flex flex-col items-center z-10"
+        className=" absolute bottom-[5px] left-[5px] rounded-[10px] sm:rounded-[12px] md:rounded-[15px] lg:rounded-[15px] w-[40px] sm:w-[45px] md:w-[50px] lg:w-[55px] h-[80px] sm:h-[90px] md:h-[100px] lg:h-[120px] flex flex-col items-center z-10"
         style={{
+          
           background: 'linear-gradient(249.85deg, rgb(248, 27, 166) 27.22%, rgb(240, 67, 207) 92.428%) ',
           padding: '8px',
         }}
@@ -105,7 +148,7 @@ const Teachers: React.FC = () => {
           transition: 'opacity 0.3s ease',
         }}
       >
-        <div className="flex items-center cursor-pointer" onClick={handleNavigate}>
+        <div className="flex items-center cursor-pointer"  onClick={() => handleNavigate(teacher)}>
           <span
             className="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px]"
             style={{ fontFamily: 'Helvetica-light', color: 'white', fontWeight: '400' }}
@@ -118,7 +161,57 @@ const Teachers: React.FC = () => {
     </div>
   ))}
 </div>
-
+<div className="mt-[184px] py-[40px] text-center" style={{borderTop: '0.5px solid rgba(30, 30, 30, 0.2)',borderBottom: '0.5px solid rgba(30, 30, 30, 0.2)'}}>
+     <Slider {...settings}>
+      <div>
+        <h3 className="text-[32px]" style={{color: 'rgba(0, 0, 0, 0.3)',fontFamily:'Helvetica'}}>udemy</h3>
+      </div>
+      <div>
+      <h3 className="text-[32px]" style={{color: 'rgba(0, 0, 0, 0.4)'}}>coursera</h3>
+      </div>
+      <div>
+      <h3 className="text-[32px]" style={{color: 'rgba(0, 0, 0, 0.3)',fontFamily:'Helvetica'}}>Google</h3>
+      </div>
+      <div>
+        <h3 className="text-[32px]" style={{color: 'rgba(0, 0, 0, 0.4)'}}>Cognizant</h3>
+      </div>
+      <div>
+      <h3 className="text-[32px]" style={{color: 'rgba(0, 0, 0, 0.3)',fontFamily:'Helvetica'}}>udemy</h3>      </div>
+      <div>
+      <h3 className="text-[32px]" style={{color: 'rgba(0, 0, 0, 0.4)'}}>coursera</h3>
+      </div>
+      <div>
+        <h3 className="text-[32px]" style={{color: 'rgba(0, 0, 0, 0.3)',fontFamily:'Helvetica'}}>Google</h3>
+      </div>
+      <div>
+        <h3 className="text-[32px]" style={{color: 'rgba(0, 0, 0, 0.4)'}}>Cognizant</h3>
+      </div>
+      <div>
+      <h3 className="text-[32px]" style={{color: 'rgba(0, 0, 0, 0.3)',fontFamily:'Helvetica'}}>udemy</h3>      </div>
+      <div>
+        <h3 className="text-[32px]" style={{color: 'rgba(0, 0, 0, 0.4)'}}>coursera</h3>
+      </div>
+      <div>
+      <h3 className="text-[32px]" style={{color: 'rgba(0, 0, 0, 0.3)',fontFamily:'Helvetica'}}>Google</h3>
+      </div>
+      <div>
+        <h3 className="text-[32px]" style={{color: 'rgba(0, 0, 0, 0.4)'}}>Cognizant</h3>
+      </div>
+      <div>
+      <h3 className="text-[32px]" style={{color: 'rgba(0, 0, 0, 0.3)',fontFamily:'Helvetica'}}>udemy</h3>     
+       </div>
+      <div>
+      <h3 className="text-[32px]" style={{color: 'rgba(0, 0, 0, 0.4)'}}>coursera</h3>
+      </div>
+      <div>
+      <h3 className="text-[32px]" style={{color: 'rgba(0, 0, 0, 0.3)',fontFamily:'Helvetica'}}>Google</h3>
+      </div>
+      <div>
+        <h3 className="text-[32px]" style={{color: 'rgba(0, 0, 0, 0.4)'}}>Cognizant</h3>
+      </div>
+    </Slider>
+    </div>
+  <Footer/>
     </div>
   );
 };

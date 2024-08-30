@@ -103,8 +103,8 @@ const About: React.FC = () => {
     <button className="px-[22px] py-[10px] rounded-[18px] text-[16px] mr-[26px] mt-[10px] sm:mt-[10px] md:mt-[10px] lg:mt-[10px] xl:mt-[10px]" style={{ fontFamily:'Helvetica', fontWeight:'400', color: 'rgb(35, 45, 79)', background: 'rgb(255, 255, 255)', border: '0.5px solid rgb(35, 45, 79)'}}>
       Designing
     </button>
-    <button className="px-[12px] rounded-[18px] text-[16px] pb-[7px] pt-[7px] border-none mr-[26px] mt-[10px] sm:mt-[10px] md:mt-[10px] lg:mt-[10px] xl:mt-[10px]" style={{ background: 'rgb(163, 69, 254)' }}>
-      <img className="h-[19px] w-[18px]" src={Buttonicon} style={{ transform: 'rotate(-5.00deg)' }}/>
+    <button className="px-[12px] rounded-[18px] text-[16px] pb-[10px] pt-[10px] border-none mr-[26px] mt-[10px] sm:mt-[10px] md:mt-[10px] lg:mt-[10px] xl:mt-[10px]" style={{ background: 'rgb(163, 69, 254)' }}>
+      <img className="h-[16px] w-[16px]" src={Buttonicon} style={{ transform: 'rotate(-5.00deg)' }}/>
       <span className="pb-[10px] pl-[5px] text-[16px]" style={{ color: 'rgb(255, 255, 255)', fontFamily:'Helvetica', fontWeight:'400' }}>UI/UX Designing</span>
     </button>
     <button className="px-[26px] py-[10px] rounded-[18px] text-[16px] mr-[26px] mt-[10px] sm:mt-[10px] md:mt-[10px] lg:mt-[10px] xl:mt-[10px]" style={{ fontFamily:'Helvetica', fontWeight:'400', color: 'rgb(35, 45, 79)', background: 'rgb(255, 255, 255)', border: '0.5px solid rgb(35, 45, 79)'}}>
