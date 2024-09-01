@@ -81,12 +81,12 @@ const Teachers: React.FC = () => {
         >
           {teachers.map((teacher, index) => (
             <div className='relative' key={index}>
-              <img className='lg:w-[277px] w-full' src={teacher.image} alt={teacher.name} />
+              <img className='lg:w-[277px] w-full h-[419px] rounded-[12px]' src={teacher.image} alt={teacher.name} />
               <div className='absolute bottom-[32px] left-[90px]'>
                 <span className='text-[20px] lg:text-[24px]' style={{ color: 'rgb(255, 255, 255)', fontFamily: 'Helvetica-light' }}>{teacher.name}</span>
                 <p className='text-[14px] lg:text-[16px] mt-[11px]' style={{ fontFamily: 'Helvetica-light', color: 'rgb(255, 255, 255)' }}>{teacher.position}</p>
               </div>
-              <div className='absolute bottom-[5px] left-[5px] rounded-[15px] w-[55px] h-[120px] flex flex-col items-center' style={{ background: 'linear-gradient(249.85deg, rgb(248, 27, 166) 27.22%, rgb(240, 67, 207) 92.428%)', padding: '10px' }}>
+              <div className='absolute bottom-[10px] left-[7px] rounded-[15px] w-[55px] h-[120px] flex flex-col items-center' style={{ background: 'linear-gradient(249.85deg, rgb(248, 27, 166) 27.22%, rgb(240, 67, 207) 92.428%)', padding: '10px' }}>
                 <a href='#' className='mb-[4px]'><img src={Facebook} alt="Facebook" /></a>
                 <a href='#' className='mb-[4px]'><img src={Twitter} alt="Twitter" /></a>
                 <a href='#'><img src={Linkedin} alt="LinkedIn" /></a>

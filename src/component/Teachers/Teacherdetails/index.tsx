@@ -109,15 +109,22 @@ provide students with valuable insights and potential career opportunities.”`,
   />
   <h2 className="mt-[44px] uppercase w-[300px] sm:w-[350px] md:w-[450px] lg:w-[400px] text-[24px] sm:text-[36px] md:text-[48px] lg:text-[60px] xl:text-[72px]"       style={{ fontFamily: 'Helvetica', fontWeight: '500', color: 'rgba(0, 0, 0, 0.8)' }}>{teacher.name}</h2>
         </div>
+       
         <div className="mt-[44px]">
           <p className="w-[495px] text-[18px]" style={{color: 'rgba(35, 45, 79, 0.7)',fontFamily:'Helvetica'}}>online platforms often offer mico-courses or modules allowing learners to focus on specific topics of interest and acquire targeted skills</p>
-        </div>      
+        </div> 
+             
   </div>
     </div>
     <div className="pl-[120px]">
+      <div className="flex">
       <div className="flex flex-col">
       <img src={Training1} className='mt-4 lg:mt-0 ml-0 lg:ml-4 w-[80px] lg:w-[100px]' alt="Training 1" />
       <img src={Training2} className='mt-4 lg:mt-0 ml-0 lg:ml-4 w-[80px] lg:w-[100px]' alt="Training 2" />
+      </div>
+      <div className="w-[900px] ml-[100px]">
+      <img className="h-[600px]   " src={teacher.image}/>
+      </div>
       </div>
       <div >
         <div className="flex items-center">
@@ -130,6 +137,7 @@ provide students with valuable insights and potential career opportunities.”`,
           </div>
         </div>
       </div>
+      
     </div>
     <div className="flex items-center pl-[120px]  mb-[54px] mt-[80px]" >
       <h3  className="text-[44px] " style={{
