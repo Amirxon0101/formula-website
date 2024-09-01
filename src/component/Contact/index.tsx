@@ -10,6 +10,7 @@ import ArrowButton from '../../assets/icons/arrowButton.svg'
 import ScrollDown from '../../assets/icons/scrollDown.svg'
 import { Placemark, YMaps } from '@pbe/react-yandex-maps';
 import { Map } from "@pbe/react-yandex-maps";
+import { useState } from "react";
 
 const Contact: React.FC = () => {
   const settings = {
@@ -48,6 +49,36 @@ const Contact: React.FC = () => {
     ],
   };
 
+  const [activeCategory, setActiveCategory] = useState<string | null>(null);
+
+  const categories = [
+    'Web development',
+    'Designing',
+    'UI/UX Designing',
+    'AI',
+    'Machine learning',
+    'Wordpress development',
+    'Laravel Development',
+    'Javascript Development',
+    'C++',
+    'Python',
+    'More+'
+  ];
+
+  const payments = [
+    '$0-10$',
+    '$10-30$',
+    '30$-50$',
+    '$50-80$',
+    '$80-More'
+  ]
+
+  const handleCategoryClick = (category: string) => {
+    setActiveCategory(category === activeCategory ? null : category);
+  };
+
+
+
 
 
   return (
@@ -73,11 +104,30 @@ const Contact: React.FC = () => {
     <div style={{borderRight: '0.5px solid rgba(30, 30, 30, 0.2)'}}>
         <h3 className="text-[24px]" style={{fontFamily:'Helvetica' , fontWeight:'400', color:'rgba(0, 0, 0, 0.5)'}}>Course</h3>
       <div className="flex gap-[10px] flex-wrap ">
-        <button className="mt-[32px] py-[6px] px-[14px] text-[16px] rounded-[18px] flex justify-center items-center" style={{fontFamily:'Helvetica', fontWeight:'400', color:'rgba(255, 255, 255, 1)', background:'rgba(163, 69, 254, 1)' , border:'none '}}>
+
+      {categories.map(category => (
+        
+      <button
+        key={category}
+        onClick={() => handleCategoryClick(category)}
+        className="cursor-pointer px-[22px] py-[10px] rounded-[18px] text-[16px] mr-[10px] sm:mr-[16px] md:mr-[26px] mt-[10px]"
+        style={{
+          fontFamily: 'Helvetica',
+          fontWeight: '400',
+          color: activeCategory === category ? 'white' : 'rgb(35, 45, 79)',
+          background: activeCategory === category ? 'rgb(163, 69, 254)' : 'rgb(255, 255, 255)',
+          border: activeCategory === category ?'none':'0.5px solid rgb(35, 45, 79)',
+        }}
+      >
+        {category}
+      </button>
+    ))}
+
+        {/* <button className="mt-[32px] py-[6px] px-[14px] text-[16px] rounded-[18px]  flex justify-center items-center" style={{fontFamily:'Helvetica', fontWeight:'400', color: 'rgba(255, 255, 255, 1)', background:'rgba(163, 69, 254, 1)' ,  border:'none '}}>
           <img src={Arrow} alt="" />
           UI/UX Designing
           </button>
-        <button className=" mt-[32px] py-[10px] px-[28px] text-[16px] rounded-[18px]" style={{fontFamily:'Helvetica', fontWeight:'400', color:'rgb(35, 45, 79)', background:'rgb(255, 255, 255)' , border: '0.5px solid rgb(35, 45, 79)'}}>
+        <button className= "mt-[32px] py-[10px] px-[28px] text-[16px] rounded-[18px]" style={{fontFamily:'Helvetica', fontWeight:'400', color:'rgb(35, 45, 79)', background:'rgb(255, 255, 255)' , border: '0.5px solid rgb(35, 45, 79)'}}>
           Designing
         </button>
         <button className=" mt-[32px] py-[10px] px-[26px] text-[16px] rounded-[18px]" style={{fontFamily:'Helvetica', fontWeight:'400', color:'rgb(35, 45, 79)', background:'rgb(255, 255, 255)' , border: '0.5px solid rgb(35, 45, 79)'}}>
@@ -106,38 +156,52 @@ const Contact: React.FC = () => {
         </button>
         <button className="mt-[32px] py-[10px] px-[28px] text-[16px] rounded-[18px]" style={{fontFamily:'Helvetica', fontWeight:'400', color:'rgb(35, 45, 79)', background:'rgb(255, 255, 255)' , border: '0.5px solid rgb(35, 45, 79)'}}>
           More+
-        </button>
+        </button> */}
       </div>
       <h3 className="text-[24px] pt-[56px]" style={{fontFamily:'Helvetica', fontWeight:'400' , color:'rgba(0, 0, 0, 0.5)'}}>Your budget</h3>
       <div className="flex flex-wrap gap-[32px] mt-[33px] pb-[80px]">
-        <button className="rounded-[30px] py-[12px] px-[30px] text-[16px]" style={{fontFamily:'Helvetica' ,fontWeight:'400', color:'rgba(35, 45, 79, 1)', background:'rgba(255, 255, 255, 1)' ,border:' 0.5px solid rgb(35, 45, 79)'}}>$0-10$</button>
+      {payments.map(payment => (
+        
+        <button
+          key={payment}
+          onClick={() => handleCategoryClick(payment)}
+          className="cursor-pointer px-[22px] py-[10px] rounded-[18px] text-[16px] mr-[10px] sm:mr-[16px] md:mr-[26px] mt-[10px]"
+          style={{
+            fontFamily: 'Helvetica',
+            fontWeight: '400',
+            color: activeCategory === payment ? 'white' : 'rgb(35, 45, 79)',
+            background: activeCategory === payment ? 'rgb(163, 69, 254)' : 'rgb(255, 255, 255)',
+            border: activeCategory === payment ?'none':'0.5px solid rgb(35, 45, 79)',
+          }}
+        >
+          {payment}
+        </button>
+      ))}
 
+        {/* <button className="rounded-[30px] py-[12px] px-[30px] text-[16px]" style={{fontFamily:'Helvetica' ,fontWeight:'400', color:'rgba(35, 45, 79, 1)', background:'rgba(255, 255, 255, 1)' ,border:' 0.5px solid rgb(35, 45, 79)'}}>$0-10$</button>
         <button className="rounded-[30px] py-[12px] px-[30px] text-[16px]" style={{fontFamily:'Helvetica' ,fontWeight:'400', color:'rgba(35, 45, 79, 1)', background:'rgba(255, 255, 255, 1)' ,border:' 0.5px solid rgb(35, 45, 79)'}}>$10-30$</button>
-
         <button className="rounded-[30px] py-[12px] px-[24px] flex items-center gap-[6px] text-[16px]" style={{fontFamily:'Helvetica' ,fontWeight:'400', color:'rgba(255, 255, 255, 1)', background:'rgba(163, 69, 254, 1)',border:' 0.5px solid rgb(35, 45, 79)'}}>
           <img src={Arrow}/>30$-50$</button>
-
         <button className="rounded-[30px] py-[12px] px-[30px] text-[16px]" style={{fontFamily:'Helvetica' ,fontWeight:'400', color:'rgba(35, 45, 79, 1)', background:'rgba(255, 255, 255, 1)',border:' 0.5px solid rgb(35, 45, 79)'}}>$50-80$</button>
-
-        <button className="rounded-[30px] py-[12px] px-[30px] text-[16px]" style={{fontFamily:'Helvetica' ,fontWeight:'400', color:'rgba(35, 45, 79, 1)', background:'rgba(255, 255, 255, 1)',border:' 0.5px solid rgb(35, 45, 79)'}}>$80-More</button>
+        <button className="rounded-[30px] py-[12px] px-[30px] text-[16px]" style={{fontFamily:'Helvetica' ,fontWeight:'400', color:'rgba(35, 45, 79, 1)', background:'rgba(255, 255, 255, 1)',border:' 0.5px solid rgb(35, 45, 79)'}}>$80-More</button> */}
       </div>
     </div>  
     </div>
 
 
     <div style={{ borderTop: '0.5px solid rgba(30, 30, 30, 0.2)', borderBottom:'0.5px solid rgba(30, 30, 30, 0.2)'}} className="flex pb-[80px] max-sm:pb-0 sm:pb-0 md:pb-[60px]">
-      <div style={{borderRight: '0.5px solid rgba(30, 30, 30, 0.2)'}} className="flex mr-[159px] pt-[50px] items-center max-sm:mr-[32px] sm:mr-[32px] md:mr-[12px]
+      <div style={{borderRight: '0.5px solid rgba(30, 30, 30, 0.2)'}} className="flex mr-[159px] pt-[50px] items-center sm:mr-[32px] md:mr-[12px]
       lg:mr-[159px] lg:pt-[50px] max-sm:mr-[10px]">
-        <h3 className=" flex rotate-90 text-[16px] gap-[8px] max-sm:text-[12px] max-sm:w-[92px] max-sm:h-[12px]" style={{fontFamily:'Helvetica' ,fontWeight:'400', color:'rgba(30, 30, 30, 0.7)' ,}}>SCROLL DOWN <img style={{rotate:'270deg'}} src={ScrollDown} className="max-sm:w-[17px] max-sm:h-[17px]"/> </h3>
+        <h3 className="flex rotate-90 text-[16px] gap-[8px] max-sm:text-[12px] max-sm:w-[92px] max-sm:h-[12px]" style={{fontFamily:'Helvetica' ,fontWeight:'400', color:'rgba(30, 30, 30, 0.7)' ,}}>SCROLL DOWN <img style={{rotate:'270deg'}} src={ScrollDown} className="max-sm:w-[17px] max-sm:h-[17px]"/> </h3>
       </div>
       <div className="flex justify-center pt-[80px] max-sm:flex-col sm:flex-col md:flex-row md:flex-wrap md:pt-[50px] lg:flex-row lg:flex lg:justify-center" >
         <div className="pr-[184px]" >
           <p className="text-[24px] max-sm:text-[16px] sm:text-[16px] sm:pt-[32px] lg:text-[24px] " style={{fontFamily:'Helvetica' ,fontWeight:'400', color:'rgba(0, 0, 0, 0.5)', outline:'none'}}>What’s your name</p>
-          <input type="text " placeholder="Albert Forst"  className="pb-[8px] pt-[36px] text-[24px] max-sm:text-[16px] max-sm:pt-[16px] sm:text-[16px] lg:pb-[8px] lg:pt-[36px] lg:text-[24px]"  style={{border:'none', borderBottom: '1px solid rgba(0, 0, 0, 0.8)', color:'rgba(0, 0, 0, 0.8)'}}/>
+          <input type="text " placeholder="Albert Forst"  className="pb-[8px] pt-[36px] text-[24px] outline-none max-sm:text-[16px] max-sm:pt-[16px] sm:text-[16px] lg:pb-[8px] lg:pt-[36px] lg:text-[24px]"  style={{border:'none', borderBottom: '1px solid rgba(0, 0, 0, 0.8)', color:'rgba(0, 0, 0, 0.8)'}}/>
         </div>
         <div >
           <h3 className="text-[24px] lg:pt-[30px] max-sm:text-[16px] max-sm:pt-[28px] sm:text-[16px] sm:pt-[28px] lg:text-[24px]" style={{fontFamily:'Helvetica' ,fontWeight:'400', color:'rgba(0, 0, 0, 0.5)', outline:'none'}}>What’s your email address </h3>
-          <input type="email" placeholder="eg.setup@gmail.com" className="pb-[8px] pt-[36px] text-[24px] max-sm:text-[16px] max-sm:pt-[16px] sm:text-[16px] lg:pb-[8px] lg:pt-[36px] lg:text-[24px]" style={{border:'none', borderBottom: '1px solid rgba(0, 0, 0, 0.8)', color:'rgba(0, 0, 0, 0.3)'}}/>
+          <input type="email" placeholder="eg.setup@gmail.com" className="pb-[8px] pt-[36px] text-[24px] outline-none max-sm:text-[16px] max-sm:pt-[16px] sm:text-[16px] lg:pb-[8px] lg:pt-[36px] lg:text-[24px]" style={{border:'none', borderBottom: '1px solid rgba(0, 0, 0, 0.8)', color:'rgba(0, 0, 0, 0.3)'}}/>
         </div>
 
         <div className="pl-[73px] mt-[20px] max-sm:pl-0 sm:pl-0 md:pl-[20px] lg:pl-[73px] lg:mt-[20px] xl:mt-[60px]">

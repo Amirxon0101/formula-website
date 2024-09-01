@@ -8,6 +8,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        "custom-purple": "rgba(163, 69, 254, 1)",
+        "contact-black" : "rgb(255, 255, 255)",
         "black-border-rgba": "rgba(22, 22, 22, 0.05)",
         "red-border-rgba": "rgba(255, 77, 77, 0.50)",
         "red-bg-rgba": "rgba(255, 77, 77, 0.10)",

@@ -2,7 +2,11 @@ import Navbar from "../Navbar";
 import Coursesimg from '../../assets/imgs/Coursesimg.jpg'
 import Buycourse from '../../assets/icons/buycourseimg.svg'
 import Addcourse from '../../assets/icons/addcourse.svg'
+import { useNavigate } from "react-router-dom";
 const Courses = () => {
+
+const navigate = useNavigate();
+
 const courses=[{
     id:1,
     image:Coursesimg,
@@ -41,9 +45,9 @@ const courses=[{
                            <span className="text-[20px] " style={{color:'rgba(30, 30, 30, 0.70)',fontFamily:'Helvetica'}}>{item.price}</span>
                            </div>
                            <div className="flex items-center mt-[20px] ">
-                            <button className="flex items-center border-none outline-none py-[13px] px-[48px] rounded-[3px]" style={{background:'linear-gradient(87deg, #C859FC 0%, #A344FF 106.22%)'}}>
+                            <button className="flex items-center border-none outline-none py-[13px] px-[48px] rounded-[3px]" onClick={()=>navigate('/details')} style={{background:'linear-gradient(87deg, #C859FC 0%, #A344FF 106.22%)'}}>
                                 <img src={Buycourse}/>
-                                <span className="text-[16px] ml-[10px]" style={{fontFamily:'Helvetica-normal',color:'white'}}>Buy now </span>
+                                <span className="text-[16px] ml-[10px]" style={{fontFamily:'Helvetica-normal',color:'white'}} >Buy now </span>
                             </button>
                             <button className="ml-[24px] flex items-center  pt-[11px] pb-[12px] px-[38px] rounded-[4px]"style={{border:'0.42px solid rgba(35, 45, 79, 0.6)'}}>
                                 <img src={Addcourse}/>

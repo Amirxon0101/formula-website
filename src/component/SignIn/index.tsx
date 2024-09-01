@@ -53,8 +53,8 @@ const SingIn: React.FC = () => {
     return (
     <div>
       <Navbar/>
-      <div className="flex gap-[133px] pl-[170px] pt-[100px] pb-[62px] flex-wrap max-sm:pl-[16px] max-sm:pt-[26px] 
-      sm:pt-[100px] sm:pl-[130px] md:pl-[170px] lg:pl-[50px] xl:pl-[170px]">
+      <div className="flex gap-[133px] pl-[170px] pt-[100px] pb-[62px] flex-wrap max-sm:pl-[6px] max-sm:pt-[26px] 
+      sm:pt-[100px] sm:pl-[130px] md:pl-[170px] lg:pl-[50px] xl:pl-[170px] ">
         <div className="flex flex-col">
             <div className="order-1 lg:relative " >
                 <h1 className="text-[96px] pb-[12px] max-sm:text-[36px] sm:text-[96px]" style={{fontFamily:'Helvetica', fontWeight:'500', color:'rgba(0, 0, 0, 0.8)'}}>HI THERE!</h1>
