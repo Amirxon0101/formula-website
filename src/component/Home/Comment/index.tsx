@@ -43,9 +43,9 @@ const Comment: React.FC = () => {
             }}
         >
          
-            <div className="flex flex-col items-center pt-[80px] mb-[28px]">
+            <div className="flex flex-col items-center pt-[80px] mb-[28px]  ">
                 <h4
-                    className="w-[524px] text-[40px] text-center mb-[24px]"
+                    className="w-[524px] text-[40px] text-center mb-[24px] "
                     style={{
                         fontFamily: 'Helvetica',
                         background: 'linear-gradient(178.65deg, rgb(35, 45, 79), rgb(80, 103, 181))',
@@ -57,7 +57,7 @@ const Comment: React.FC = () => {
                 >
                     What they’re saying about our course
                 </h4>
-                <p className="w-[676px] text-center mb-[28px]">
+                <p className="w-[676px] text-center mb-[28px] ">
                     Online platforms often offer micro-courses or modules, allowing learners to focus on specific
                     topics of interest and acquire targeted skills.
                 </p>
@@ -74,10 +74,10 @@ const Comment: React.FC = () => {
             <div style={{ zIndex: '888' }}>
                 <Carousel responsive={responsive} arrows={false} ref={carouselRef} className="w-[800px] ">
                     {[...Array(4)].map((_, index) => (
-                        <div key={index} className="w-[797px] h-[530px] rounded-[70px] flex  " style={{ zIndex: '22', backdropFilter: 'blur(36px)', background: 'rgba(255, 255, 255, 0.66)', border: '10px solid rgb(248, 246, 246)' }}>
-                            <img className="pt-[84px] ml-[64px] pb-[84px]" src={Commentimg} style={{ zIndex: '213' }} />
+                        <div key={index} className="w-[797px] h-[530px] rounded-[70px] flex" style={{ zIndex: '22', backdropFilter: 'blur(36px)', background: 'rgba(255, 255, 255, 0.66)', border: '10px solid rgb(248, 246, 246)' }}>
+                            <img className="pt-[84px] ml-[64px] pb-[84px] " src={Commentimg} style={{ zIndex: '213' }} />
                             <div className="mt-[131px] ml-[50px]" style={{ zIndex: '13' }}>
-                                <h5 className="text-[40px]" style={{ fontFamily: 'Helvetica', fontWeight: '700', color: 'rgba(0, 0, 0, 0.7)' }}>
+                                <h5 className="text-[40px] " style={{ fontFamily: 'Helvetica', fontWeight: '700', color: 'rgba(0, 0, 0, 0.7)' }}>
                                     Lara Ochoa
                                 </h5>
                                 <div className="flex mt-[6px]">
@@ -91,7 +91,7 @@ const Comment: React.FC = () => {
                                         <img key={starIndex} className="mr-[10px]" src={Stars} />
                                     ))}
                                 </div>
-                                <p className="text-[20px] mt-[64px]" style={{ color: 'rgba(0, 0, 0, 0.6)', fontFamily: 'Helvetica-normal', fontWeight: '400' }}>
+                                <p className="text-[20px] mt-[64px] " style={{ color: 'rgba(0, 0, 0, 0.6)', fontFamily: 'Helvetica-normal', fontWeight: '400' }}>
                                     There are many variations of<br />passage of Lorem Ipsum <br />available, but the majority have<br />suffered alteration in some from,<br />by injected humour.
                                 </p>
                             </div>
@@ -115,7 +115,7 @@ const Comment: React.FC = () => {
         <img className='w-[24px]' src={CarouselRight}/>
         </button>
         </div>
-            <img className="rounded-full absolute top-[240px] left-[200px]" src={Circle1} alt="Circle Icon 1" />
+            <img className="rounded-full absolute top-[240px] left-[200px] " src={Circle1} alt="Circle Icon 1" />
             <img className="rounded-full absolute top-[540px] left-[130px]" src={Circle1} alt="Circle Icon 2" />
             <img className="rounded-full absolute top-[850px] left-[170px]" src={Circle1} alt="Circle Icon 3" />
             <img className="rounded-full absolute top-[290px] right-[150px]" src={Circle1} alt="Circle Icon 4" />
