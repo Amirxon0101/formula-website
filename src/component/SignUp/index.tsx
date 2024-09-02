@@ -53,8 +53,8 @@ const SingIn: React.FC = () => {
     return (
     <div>
       <Navbar/>
-      <div className="flex gap-[133px] pl-[170px] pt-[100px] pb-[62px] flex-wrap max-sm:pl-[16px] max-sm:pt-[26px] 
-      sm:pt-[100px] sm:pl-[80px] md:pl-[170px] lg:pl-[50px] xl:pl-[110px] 2xl:pl-[170px] xl:pt-[100px] 2xl:pt-[100px]">
+      <div className="flex gap-[133px] pl-[170px] pt-[100px] pb-[62px] flex-wrap max-sm:pl-[6px] max-sm:pt-[26px] 
+      sm:pt-[100px] sm:pl-[80px] md:pl-[170px] lg:pl-[50px] xl:pl-[110px] 2xl:pl-[170px] xl:pt-[100px] 2xl:pt-[100px] ">
         <div className="flex flex-col">
             <div className="order-1 lg:relative " >
                 <h1 className="text-[96px] w-[676px] pb-[18px] 

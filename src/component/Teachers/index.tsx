@@ -100,12 +100,12 @@ const Teachers: React.FC = () => {
       
       <img
          
-        className= "rounded-[20px]  h-[419px] relative w-full lg:w-[277px] xl:w-[300px] 2xl:w-[350px] "
+        className= "rounded-[20px]  h-[419px] w-[278px] relative w-full lg:w-[277px] xl:w-[300px] 2xl:w-[350px] "
         style={{ transition: 'opacity 0.3s ease',  objectFit: 'cover'     }}
         src={teacher.image}
         alt={teacher.name}
       />
-      <div className="absolute bottom-[10px] sm:bottom-[20px] md:bottom-[25px] lg:bottom-[32px] left-[10px] sm:left-[30px] md:left-[50px] lg:left-[90px] xl:left-[110px]">
+      <div className="absolute bottom-[10px] sm:bottom-[15px] md:bottom-[20px] lg:bottom-[25px] xl:bottom-[32px] left-[80px] sm:left-[80px] md:left-[80px] lg:left-[90px] xl:left-[90px]">
         <span
           className="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px]"
           style={{ color: 'rgb(255, 255, 255)', fontFamily: 'Helvetica-light' }}
@@ -122,7 +122,7 @@ const Teachers: React.FC = () => {
 
       {/* Social Media Icons with higher z-index */}
       <div
-        className=" absolute bottom-[10px] left-[7px] rounded-[10px] sm:rounded-[12px] md:rounded-[15px] lg:rounded-[15px] w-[40px] sm:w-[45px] md:w-[50px] lg:w-[55px] h-[80px] sm:h-[90px] md:h-[100px] lg:h-[120px] flex flex-col items-center z-10"
+        className=" absolute bottom-[10px] left-[7px] rounded-[10px] sm:rounded-[12px] md:rounded-[15px] lg:rounded-[15px] sm:w-[45px] md:w-[50px] lg:w-[55px] h-[110px] sm:h-[110px] md:h-[100px] lg:h-[110px] flex flex-col items-center z-10"
         style={{
           
           background: 'linear-gradient(249.85deg, rgb(248, 27, 166) 27.22%, rgb(240, 67, 207) 92.428%) ',

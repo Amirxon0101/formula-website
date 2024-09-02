@@ -18,6 +18,8 @@ const Courses  = lazy(()=>import("../component/Courses"))
 const Contact  = lazy(()=>import("../component/Contact"));
 const SingIn = lazy(()=>import('../component/SignIn'));
 const SignUp = lazy(() => import('../component/SignUp'))
+const CourseDetails = lazy(() => import('../component/Courses/CourseDetails'))
+const CourseVideo = lazy(()=>import('../component/Courses/CourseVideo'))
 
 interface RouteData {
   id: number;
@@ -102,6 +104,11 @@ export const Data: RouteData[] = [
     path:"/Courses",
     component:Courses
   },
+  {
+    id:78,
+    path:"/Courses/details",
+    component:CourseDetails
+  },
     {id:23,
     path:"/Contact",
     component:Contact
@@ -116,6 +123,12 @@ export const Data: RouteData[] = [
     path:"/SignUp",
     component: SignUp
   },
+  {
+    id:26,
+    path:"/Courses/details/video",
+    component: CourseVideo 
+  },
+
   
 
 
