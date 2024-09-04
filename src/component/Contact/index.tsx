@@ -84,7 +84,7 @@ const Contact: React.FC = () => {
   return (
   <div>
     <Navbar/>
-    <div className="flex items-center pl-[180px] mb-[68px] 
+    <div className="flex items-center pl-[180px] pb-[68px] 
     max-sm:mb-[20px] max-sm:items-center max-sm:pl-[25px] sm:gap-[30px] "  style={{borderBottom: '0.5px solid rgba(30, 30, 30, 0.2)'}}>
       <h2 className="text-[96px] mt-[120px] pb-[100px] 
       max-sm:pr-[80px] max-sm:text-[26px] 
@@ -100,9 +100,9 @@ const Contact: React.FC = () => {
       lg:mr-[223px] lg:w-[219px] lg:h-[219px]"
       /> 
     </div>
-    <div className="pr-[120px] ml-[223px] max-sm:ml-[16px] max-sm:pr-[30px] sm:pr-[60px] sm:ml-[50px]">
-    <div style={{borderRight: '0.5px solid rgba(30, 30, 30, 0.2)'}}>
-        <h3 className="text-[24px]" style={{fontFamily:'Helvetica' , fontWeight:'400', color:'rgba(0, 0, 0, 0.5)'}}>Course</h3>
+    <div >
+    <div className="pt-[62px] max-sm:pt-0 sm:pt-[62px] mr-[120px] ml-[223px] max-sm:ml-[16px] max-sm:mr-[30px] sm:mr-[60px] sm:ml-[50px]" style={{borderRight: '0.5px solid rgba(30, 30, 30, 0.2)'}}>
+        <h3 className="text-[24px] max-sm:pb-[18px] pb-[32px]" style={{fontFamily:'Helvetica' , fontWeight:'400', color:'rgba(0, 0, 0, 0.5)'}}>Course</h3>
       <div className="flex gap-[10px] flex-wrap ">
 
       {categories.map(category => (
@@ -187,19 +187,17 @@ const Contact: React.FC = () => {
       </div>
     </div>  
     </div>
-
-
-    <div style={{ borderTop: '0.5px solid rgba(30, 30, 30, 0.2)', borderBottom:'0.5px solid rgba(30, 30, 30, 0.2)'}} className="flex pb-[80px] max-sm:pb-0 sm:pb-0 md:pb-[60px]">
-      <div style={{borderRight: '0.5px solid rgba(30, 30, 30, 0.2)'}} className="flex mr-[159px] pt-[50px] items-center sm:mr-[32px] md:mr-[12px]
-      lg:mr-[159px] lg:pt-[50px] max-sm:mr-[10px]">
+    <div className="flex" style={{borderTop: '0.5px solid rgba(30, 30, 30, 0.2)', borderBottom:'0.5px solid rgba(30, 30, 30, 0.2)' }}>
+    <div className="flex  items-center">
         <h3 className="flex rotate-90 text-[16px] gap-[8px] max-sm:text-[12px] max-sm:w-[92px] max-sm:h-[12px]" style={{fontFamily:'Helvetica' ,fontWeight:'400', color:'rgba(30, 30, 30, 0.7)' ,}}>SCROLL DOWN <img style={{rotate:'270deg'}} src={ScrollDown} className="max-sm:w-[17px] max-sm:h-[17px]"/> </h3>
       </div>
-      <div className="flex justify-center pt-[80px] max-sm:flex-col sm:flex-col md:flex-row md:flex-wrap md:pt-[50px] lg:flex-row lg:flex lg:justify-center" >
+      <div style={{ borderLeft: '0.5px solid rgba(30, 30, 30, 0.2)'}} className="flex pl-[102px] pb-[80px] max-sm:pl-[32px] sm:pl-[52px] md:pl-[52px] lg:pl-[102px] max-sm:pb-0 sm:pb-0 md:pb-[60px] ">
+      <div className="flex justify-center pt-[80px] max-sm:flex-col sm:flex-col md:flex-row md:flex-wrap md:pt-[50px] lg:flex-row lg:flex lg:justify-center"  >
         <div className="pr-[184px]" >
           <p className="text-[24px] max-sm:text-[16px] sm:text-[16px] sm:pt-[32px] lg:text-[24px] " style={{fontFamily:'Helvetica' ,fontWeight:'400', color:'rgba(0, 0, 0, 0.5)', outline:'none'}}>What’s your name</p>
           <input type="text " placeholder="Albert Forst"  className="pb-[8px] pt-[36px] text-[24px] outline-none max-sm:text-[16px] max-sm:pt-[16px] sm:text-[16px] lg:pb-[8px] lg:pt-[36px] lg:text-[24px]"  style={{border:'none', borderBottom: '1px solid rgba(0, 0, 0, 0.8)', color:'rgba(0, 0, 0, 0.8)'}}/>
         </div>
-        <div >
+        <div>
           <h3 className="text-[24px] lg:pt-[30px] max-sm:text-[16px] max-sm:pt-[28px] sm:text-[16px] sm:pt-[28px] lg:text-[24px]" style={{fontFamily:'Helvetica' ,fontWeight:'400', color:'rgba(0, 0, 0, 0.5)', outline:'none'}}>What’s your email address </h3>
           <input type="email" placeholder="eg.setup@gmail.com" className="pb-[8px] pt-[36px] text-[24px] outline-none max-sm:text-[16px] max-sm:pt-[16px] sm:text-[16px] lg:pb-[8px] lg:pt-[36px] lg:text-[24px]" style={{border:'none', borderBottom: '1px solid rgba(0, 0, 0, 0.8)', color:'rgba(0, 0, 0, 0.3)'}}/>
         </div>
@@ -211,7 +209,9 @@ const Contact: React.FC = () => {
         </button>
         </div>
       </div>
+</div>
     </div>
+
 
     <div className="flex justify-center pt-[80px] pb-[100px] gap-[163px] max-sm:flex-col max-sm:pt-[55px] max-sm:gap-[32px] max-sm:pb-[74px] sm:flex-col
     sm:pt-[55px] sm:gap-[32px] sm:pb-[74px] md:gap-[50px] md:flex-row xl:gap-[280px]"> 
