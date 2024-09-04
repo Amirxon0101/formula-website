@@ -138,7 +138,7 @@ const CourseDetails: React.FC = () => {
             </div>
             <div className="flex flex-col rounded-[10px] h-[503px] pt-[28px] pb-[23px] px-[36px] mt-[88px] 
             max-sm:w-[343px] max-sm:h-[472px] max-sm:px-[24px] max-sm:pb-[22px] max-sm:mt-[32px] max-sm:mb-[64px]
-            sm:mt-[28px]" style={{border: '1px solid rgba(30, 30, 30, 0.3)'}}>
+            sm:mt-[32px] md:mt-[50px] lg:mt-[88px]" style={{border: '1px solid rgba(30, 30, 30, 0.3)'}}>
                 <div className="flex items-center justify-center gap-[12px] ">
                     <p className="text-[16px] max-sm:text-[12px]" style={{fontFamily:'Helvetica', fontWeight:'400', color:'rgba(30, 30, 30, 0.8)'}}>Price</p>
                     <h2 className="text-[36px] max-sm:text-[24px]" style={{fontFamily:'Helvetica', fontWeight:'700', color:'rgba(30, 30, 30, 1)'}}>$ 150.00</h2>
