@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Loop from '../../../assets/icons/loop.svg';
 import Courseimg from '../../../assets/imgs/courseimg.jpg';
 import MainCourse from '../../../assets/imgs/maincourse.jpg';
@@ -12,7 +12,7 @@ const Course: React.FC = () => {
 
 
     return (
-        <div className='h-full relative mx-4 lg:mx-[120px] my-8 lg:h-[px] lg:ml-[120px] mb-[00px]'>
+        <div className='h-full relative mx-4 lg:mx-[120px] my-8 lg:h-[px] lg:ml-[120px] mb-[100px]' >
             <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between">
                 <div className="lg:ml-[54px] mb-8 lg:mb-0">
                     <h4 className="text-[28px] lg:text-[40px] font-[500] leading-tight tracking-wide text-left" style={{ fontFamily: 'Helvetica', background: 'linear-gradient(178.65deg, rgb(35, 45, 79), rgb(80, 103, 181))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
@@ -35,9 +35,13 @@ const Course: React.FC = () => {
             <div className='flex flex-col lg:flex-row lg:w-[768px] pt-8 lg:pt-[200px] mx-auto'>
   <div className='flex items-center lg:ml-[-199px]'>
     {/* Popular Course Button */}
-    <button className="hidden lg:flex items-center w-[80px] justify-center h-[500px] lg:h-[793px] mb-4 border-none rounded-[5px]  whitespace-nowrap mt-1" style={{background: 'linear-gradient(178.65deg, rgb(35, 45, 79), rgb(80, 103, 181))', WebkitBackgroundClip: 'text'}}>
-      <p className='text-[16px] lg:text-[20px] text-center' style={{ transform: "rotate(-90deg)", fontFamily: 'Helvetica',color:"white" }}>Popular course</p>
-    </button>
+    <button className="hidden lg:flex items-center w-[80px] justify-center h-[500px] lg:h-[793px] mb-4 border-none rounded-[5px] whitespace-nowrap mt-1" style={{ background: "linear-gradient(178.65deg, rgb(35, 45, 79), rgb(80, 103, 181))" }}>
+  <p className='text-[16px] lg:text-[20px] text-center' style={{ transform: "rotate(-90deg)", fontFamily: 'Helvetica', color: "white" }}>
+    Popular course
+  </p>
+</button>
+
+
 
     {/* Main Course Content */}
     <div className="w-full lg:w-[600px] bg-white p-4 mt-[20px] lg:mt-0 lg:pl-[50px] rounded-[10px]" style={{ background: 'rgb(248, 248, 248)' }}>
